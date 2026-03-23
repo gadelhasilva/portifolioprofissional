@@ -1,1 +1,91 @@
-<h1>Meu Portfólio Automatizado!</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Fernando Gadelha | Analista de Sistemas & DevOps</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--card-bg);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        h1 { color: #ffffff; margin-bottom: 5px; }
+        h2 { color: var(--accent-color); font-weight: 400; margin-top: 0; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background-color: #21262d;
+            border: 1px solid var(--border-color);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        a { color: var(--accent-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fernando Victor Gadelha da Silva</h1>
+    <h2>Analista de Sistemas / DevOps</h2>
+    <p>Manaus, AM | <a href="mailto:fvgadelha60@gmail.com">fvgadelha60@gmail.com</a> | <a href="https://github.com/gadelhasilva" target="_blank">GitHub</a></p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h3 style="color: #ffffff;">Sobre Mim</h3>
+        <p>Sou formado em Sistemas de Informação e curso pós-graduação em Desenvolvimento FullStack. Minha trajetória me deu uma visão completa do ciclo de vida das aplicações: adoro entender a necessidade do negócio e traduzi-la em soluções reais de arquitetura. Tenho bastante prática em automatizar esteiras de deploy (CI/CD) e versionamento com Git. No dia a dia, atuo na linha de frente investigando bugs e fazendo consultas avançadas em bancos de dados. Uso metodologias ágeis para garantir que a ponte entre infraestrutura e desenvolvimento flua com eficiência.</p>
+    </div>
+
+    <div class="card">
+        <h3 style="color: #ffffff;">Principais Competências</h3>
+        <div class="skills">
+            <span class="skill-tag">Metodologias Ágeis (Scrum/Kanban)</span>
+            <span class="skill-tag">Jira</span>
+            <span class="skill-tag">Git / GitLab</span>
+            <span class="skill-tag">CI/CD (GitHub Actions)</span>
+            <span class="skill-tag">AWS & GCP</span>
+            <span class="skill-tag">Docker / Kubernetes</span>
+            <span class="skill-tag">Oracle / MySQL</span>
+            <span class="skill-tag">Linux / Nginx</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 style="color: #ffffff;">Projetos em Destaque</h3>
+        <p><strong>☁️ Infraestrutura como Código & CI/CD (Este Portfólio)</strong></p>
+        <p>Este site não é apenas uma página estática, é uma prova de conceito de práticas DevOps. Ele está hospedado em uma instância EC2 (Amazon Linux 2023) na AWS com Nginx. A entrega contínua (Deploy) é feita de forma 100% automatizada via GitHub Actions, utilizando um usuário de serviço (`deployer`) configurado com chaves SSH baseadas no princípio do menor privilégio.</p>
+    </div>
+</div>
+
+</body>
+</html>

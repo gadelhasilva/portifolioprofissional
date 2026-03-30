@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Copiar arquivos para a EC2 via SSH
         uses: appleboy/scp-action@v0.1.4

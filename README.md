@@ -22,7 +22,7 @@ Demonstrar na prática o gerenciamento do ciclo de vida de uma aplicação, desd
 
 ## 🔒 Práticas de Segurança Implementadas
 Para garantir a segurança do servidor e seguir o **Princípio do Menor Privilégio**:
-* O deploy automátizado **não** utiliza o usuário root ou o usuário padrão (`ec2-user`).
+* O deploy automátizado **não** utiliza o usuário root ou o usuário padrão.
 * Foi provisionado um usuário específico chamado `deployer`.
 * A autenticação da esteira de CI/CD é feita exclusivamente via chave assimétrica (SSH RSA), armazenada de forma segura nas *Secrets* do GitHub.
 * O usuário `deployer` possui permissão de escrita apenas no diretório de destino do Nginx, protegendo o restante do sistema operacional.

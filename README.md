@@ -2,7 +2,7 @@
 
 Este repositório contém o código-fonte do meu portfólio profissional, mas seu principal objetivo é servir como um **Case Prático de DevOps e Infraestrutura Web**.
 
-Acesse o site em produção: **[INSERIR SEU IP DA AWS OU DOMÍNIO AQUI]**
+Acesse o site em produção: https://portifolio.fernandogadelha.com.br/
 
 ## 🎯 Objetivo do Projeto
 Demonstrar na prática o gerenciamento do ciclo de vida de uma aplicação, desde o versionamento do código até a sua entrega contínua em um ambiente de produção na nuvem, aplicando conceitos de segurança e metodologias de automação ágil.
